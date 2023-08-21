@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
-group ='com.github.acer-xhy'
+group ='com.github.JohnWayneHong'
 apply from: "default.gradle"
 android {
     resourcePrefix "app_common"
