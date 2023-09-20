@@ -14,7 +14,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="44dp">
 
-        <com.jgw.common_library.widget.loadingDialog.CircularProgressView
+        <com.ggb.common_library.widget.loadingDialog.CircularProgressView
             android:id="@+id/progress_circular"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

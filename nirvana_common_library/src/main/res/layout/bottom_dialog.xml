@@ -11,7 +11,7 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
-        <com.jgw.common_library.base.view.CustomBaseRecyclerView
+        <com.ggb.common_library.base.view.CustomBaseRecyclerView
             android:id="@+id/rv_dialog_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

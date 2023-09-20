@@ -6,7 +6,7 @@
 
         <variable
             name="data"
-            type="com.jgw.common_library.bean.CommonDialogBean" />
+            type="com.ggb.common_library.bean.CommonDialogBean" />
     </data>
 
     <RelativeLayout

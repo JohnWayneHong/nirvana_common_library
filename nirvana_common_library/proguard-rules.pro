@@ -108,7 +108,7 @@
 
 -keep public class * implements java.io.Serializable {*;}
 
--keep class com.jgw.common_library.http.**{*;}
+-keep class com.ggb.common_library.http.**{*;}
 
 
 # umeng
@@ -127,7 +127,7 @@
      public<init>(org.json.JSONObject);
 }
 
--keep public class com.jgw.*.R$*{
+-keep public class com.ggb.*.R$*{
       public static final int *;
 }
 
@@ -136,4 +136,4 @@
 }
 
 -keep public class * extends androidx.lifecycle.AndroidViewModel
--keep public class * extends com.jgw.common_library.router.plugin.base.BasePlugin
+-keep public class * extends com.ggb.common_library.router.plugin.base.BasePlugin

@@ -14,7 +14,7 @@
             android:background="@drawable/radius4_white">
 
 
-            <com.jgw.common_library.widget.loadingDialog.CircularProgressView
+            <com.ggb.common_library.widget.loadingDialog.CircularProgressView
                 android:id="@+id/cpv_dialog_fragment_cycle_loading"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
