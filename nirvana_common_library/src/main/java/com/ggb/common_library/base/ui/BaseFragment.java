@@ -49,7 +49,7 @@ public abstract class BaseFragment<VM extends BaseViewModel, SV extends ViewData
 //        mBindingView = DataBindingUtil.inflate(getLayoutInflater(), initResId(), container, false);
         mBindingView = initViewBinding();
 
-        mBindingView.setLifecycleOwner(this);
+        mBindingView.setLifecycleOwner(getViewLifecycleOwner());
         mView = mBindingView.getRoot();
         initView();
         initViewModel();
