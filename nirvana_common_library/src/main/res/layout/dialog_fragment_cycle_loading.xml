@@ -20,7 +20,7 @@
                 android:layout_height="50dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="48dp"
-                app:backColor="#BDE3FF"
+                app:backColor="@color/main_color_1"
                 app:backWidth="5dp"
                 app:progColor="@color/main_color"
                 app:progWidth="5dp" />

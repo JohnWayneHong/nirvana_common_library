@@ -24,7 +24,7 @@
                     android:id="@+id/cpv_dialog_fragment_percentage_loading"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:backColor="#BDE3FF"
+                    app:backColor="@color/main_color_1"
                     app:backWidth="5dp"
                     app:progColor="@color/main_color" />
 
