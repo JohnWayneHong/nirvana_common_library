@@ -3,8 +3,6 @@ package com.ggb.common_library.utils;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.ggb.common_library.BuildConfig;
-
 
 /**
  * Created by xsw on 2016/10/27.
