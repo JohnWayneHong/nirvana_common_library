@@ -10,9 +10,9 @@
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-    <application android:name="com.ggb.common_library.base.CustomApplication">
+    <application android:name=".base.CustomApplication">
         <provider
-            android:name="com.ggb.common_library.provider.CameraFileProvider"
+            android:name=".provider.CameraFileProvider"
             android:authorities="${applicationId}.app.file.provider"
             android:exported="false"
             android:grantUriPermissions="true"
