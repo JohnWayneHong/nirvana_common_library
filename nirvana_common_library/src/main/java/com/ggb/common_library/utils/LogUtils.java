@@ -35,6 +35,6 @@ public class LogUtils {
     }
 
     public static boolean getShowLogEnable() {
-        return BuildConfig.DEBUG || debugShowLog;
+        return debugShowLog;
     }
 }
