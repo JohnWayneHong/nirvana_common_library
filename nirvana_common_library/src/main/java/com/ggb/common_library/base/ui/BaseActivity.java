@@ -99,6 +99,7 @@ public abstract class BaseActivity<VM extends BaseViewModel, SV extends ViewData
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        context = this;
     }
 
     @Override
@@ -280,8 +281,9 @@ public abstract class BaseActivity<VM extends BaseViewModel, SV extends ViewData
         if (mDialog == null) {
             mDialog = CircularProgressDialog.newInstance(this, progressType);
             mDialog.setCancelable(false);
-            mDialog.setOnDismissListener(dialog -> dismissLoadingDialog());
-            mDialog.setLoadProgressFinishListener(this::dismissLoadingDialog);
+            CircularProgressDialog dialog1 = mDialog;
+            mDialog.setOnDismissListener(dialog -> dismissLoadingDialog(dialog1));
+            mDialog.setLoadProgressFinishListener(() -> dismissLoadingDialog(dialog1));
         }
         if (!mDialog.isShowing()) {
             isShowing = true;
@@ -296,6 +298,16 @@ public abstract class BaseActivity<VM extends BaseViewModel, SV extends ViewData
         }
         isShowing = false;
         mDialog = null;
+    }
+
+    public void dismissLoadingDialog(CircularProgressDialog dialog) {
+        if (dialog != null) {
+            dialog.dismiss();
+        }
+        if (mDialog == dialog) {
+            mDialog = null;
+            isShowing = false;
+        }
     }
 
     @Override
