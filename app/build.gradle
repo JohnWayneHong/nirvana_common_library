@@ -12,6 +12,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    namespace 'com.ggb.test'
+
     buildTypes {
         release {
             minifyEnabled false
