@@ -22,7 +22,7 @@ ext {
             umsdk_asms = "1.6.3",
             umeng_apm = "1.9.1",
             mmkv = "1.2.16",
-            xxpermissions = "18.1",
+            xxpermissions = "18.3",
             toast = "12.3"
     ]
 
@@ -54,7 +54,6 @@ ext {
             umeng_apm                 : "com.umeng.umsdk:apm:$umeng_apm",
 
             mmkv                      : "com.tencent:mmkv-static:$mmkv",
-            xxpermissions             : "com.github.acer-xhy:XXPermissions:$xxpermissions",
             toast                     : "com.github.acer-xhy:toaster:$toast"
     ]
 }
